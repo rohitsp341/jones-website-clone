@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --bg-grey:rgb(232,232,232);
+    --font-primary:'Lato', sans-serif;
+    --font-weight-thin:300;
+    --font-weight-thick:700;
+    --color-primary:#202020;
+    --small-padding:1.2em;
+
+}
+
+body{
+    height:100vh;
+    background-color: var(--bg-grey);
+    font-family: var(--font-primary);
+}
+
+header{
+    padding:var(--small-padding) 0;
+}
+
+
+.logo{
+    color:black;
+    flex:2;
+    text-align: center;
+}
+
+.logo>svg{
+    width:30%;
+}
+
+.navbar{
+    flex:4;
+}
+
+.flex{
+    display:flex;
+}
+
+.navbar li[role="nav-item"]
+{
+    list-style: none;
+}
+
+.navbar li[role="nav-item"]>a
+{
+    text-decoration: none;
+    color:var(--color-primary);
+    font-weight: var(--font-weight-thin);
+    display: block;
+}
+
+.navbar > ul
+{
+    gap:10px;
+}
